@@ -11,7 +11,7 @@ import mocksRouter from './routes/mocks.router.js';
 const app = express();
 const PORT = process.env.PORT || 8080;
 const connection = mongoose.connect(
-  `mongodb+srv://molusaezcardenas:tSUzZOhFjzWqQmid@ecommerce.cxnn6t9.mongodb.net/?retryWrites=true&w=majority&appName=Ecommerce`,
+  `mongodb+srv://molusaezcardenas:tSUzZOhFjzWqQmid@ecommerce.cxnn6t9.mongodb.net/?retryWrites=true&w=majority&appName=Pets`,
 );
 
 app.use(express.json());
