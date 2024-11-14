@@ -30,4 +30,21 @@ export const generateUsers = (count) => {
   return users;
 };
 
+export const generatePets = (count) => {
+  const cantidad = Number(count);
+  const pets = [];
+  for (let i = 0; i <= cantidad; i++) {
+    const pet = {
+      name: faker.animal.petName(),
+      specie: faker.animal.type(),
+      birthDate: faker.date.between({ from: '2000-01-01', to: Date.now() }),
+      adopted: false,
+      owner: null,
+      image: faker.image.url({ width: 200, height: 200, category: 'animals' }),
+    };
+    pets.push(pet);
+  }
+  return pets;
+};
+
 export default __dirname;
