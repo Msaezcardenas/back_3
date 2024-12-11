@@ -22,8 +22,11 @@ const updateUser = async (req, res) => {
 };
 
 const deleteUser = async (req, res) => {
+  console.log('delete user');
+
   const userId = req.params.uid;
-  const result = await usersService.getUserById(userId);
+  console.log(req.params);
+  const result = await usersService.delete(userId);
   res.send({ status: 'success', message: 'User deleted' });
 };
 
