@@ -19,10 +19,6 @@ const __dirname = dirname(__filename);
 const app = express();
 const PORT = process.env.PORT || 8080;
 dotenv.config();
-// const connection = mongoose.connect(
-//   `mongodb+srv://molusaezcardenas:tSUzZOhFjzWqQmid@ecommerce.cxnn6t9.mongodb.net/?retryWrites=true&w=majority&appName=Pets`,
-// );
-
 connectionDB();
 
 app.use(express.json());
@@ -52,3 +48,5 @@ const specs = swaggerJsDoc(swaggerOptions);
 app.use('/apidocs', swaggerUiExpress.serve, swaggerUiExpress.setup(specs));
 
 app.listen(PORT, () => console.log(`Listening on ${PORT}`));
+
+export default app;
