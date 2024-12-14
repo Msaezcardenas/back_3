@@ -2,7 +2,7 @@
 https://hub.docker.com/r/moludev/dockertest
 
 #  URL  
-https://hub.docker.com/r/moludev/dockertest](https://back3-production-5932.up.railway.app/apidocs/
+https://back3-production-5932.up.railway.app/apidocs
 
 # Proyecto Backend para Adopción de Mascotas
 
