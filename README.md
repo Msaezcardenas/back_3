@@ -36,7 +36,7 @@ Este proyecto es un backend para un sistema de adopción de mascotas. Está desa
 
 - **Gestor de Imágenes**: Subida de archivos implementada con Multer.
 - **Modularidad**: Separación clara entre rutas, controladores, servicios y DAOs.
-- **Pruebas Unitarias**: Carpeta dedicada para pruebas con Jest u otras herramientas.
+- **Pruebas de Integración**: Carpeta dedicada para pruebas con Supertest y Chai.
 
 ## Pruebas
 
